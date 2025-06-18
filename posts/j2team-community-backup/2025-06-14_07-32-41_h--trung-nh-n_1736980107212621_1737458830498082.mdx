@@ -1,0 +1,47 @@
+---
+title: "Post from Hồ Trung Nhân"
+author: "Hồ Trung Nhân"
+authorId: "100007025980185"
+date: "2025-06-14T07:32:41+0000"
+feedName: "J2TEAM Community Backup"
+feedType: "group"
+postId: "1736980107212621_1737458830498082"
+reactions: 813
+---
+
+# Post from Hồ Trung Nhân
+
+**Date:** 6/14/2025 2:32:41 PM
+**Feed:** J2TEAM Community Backup (group)
+**Post ID:** 1736980107212621_1737458830498082
+**Author:** Hồ Trung Nhân (100007025980185)
+
+## Content
+
+#j2team_share
+Thế giới giờ nguy hiểm thật bà con 😅 Mình vừa nhận được một bài test qua LinkedIn.
+
+Repo: [[https://github.com/hotrungnhan/malware-test](https://github.com/hotrungnhan/malware-test)](https://github.com/hotrungnhan/malware-test)
+
+Lúc đầu đọc source thấy khá bình thường — không có file hay package nào khả nghi.
+
+Nhưng đến khi xem file `errorHandler` thì phát hiện một hàm tên `getCookies` rất đáng ngờ. Hàm này thực hiện fetch đến một URL bên thứ ba, rồi `require` luôn đoạn code nhận về từ đó 😨
+
+Thấy không ổn nên mình bật máy ảo (VM) lên để test, thì `jest` báo là có một đống mã lạ được import sau khi runtime.
+
+Mình kiểm tra kỹ hơn thì phát hiện: URL đó chỉ trả về đoạn mã độc nếu header request có `User-Agent: axios`. Nếu dùng fetch thông thường thì server chỉ trả về lỗi 500.
+
+## Attachments
+
+### Attachment 1
+- **Type:** album
+- **Title:** Photos from Hồ Trung Nhân's post
+- **URL:** https://www.facebook.com/media/set/?set=pcb.1737458830498082&type=1
+- **Image:** https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/506358360_4190548901189268_134255733677813991_n.jpg?stp=cp1_dst-jpg_p720x720_tt6&_nc_cat=106&ccb=1-7&_nc_sid=aa7b47&_nc_eui2=AeEkGUM0K_rgeo1RrLQVs9vAX4_e_cnpAa5fj979yekBriTysLibjKHgAD8s1EWVCd3VlH6NA3rAnnSF-u3P3QNx&_nc_ohc=zyV194N66OoQ7kNvwEce10N&_nc_oc=AdnsPjVshRdrzQp8aG3BzHaSw0X8FB5fntXOY6BJSUjdbhHnCQUEWKpj047vAaLfZ30&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fhan5-8.fna&oh=00_AfP0xfHxNC-wv8vLbqdbjQVZGzxf5jlKpMyT2PmKwmxUtg&oe=6857F5B1
+
+## Engagement
+
+**Total Reactions:** 813
+
+---
+*Backed up by FeedWatcher on 2025-06-18T00:52:19.188Z*
